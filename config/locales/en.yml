@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  base_title: "Ruby on Rails"
+  help: "Help"
+  help_header: "Staticpage help"
+  home: "Home"
+  log_in: "Log in"
+  sample_app: "Sample app"
