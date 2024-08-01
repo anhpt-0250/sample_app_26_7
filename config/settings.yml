@@ -4,3 +4,9 @@ degit:
   length_name_max: 30
   length_email_max: 255
   length_password_min: 6
+  size_avatar: 50
+  size_avatar_default: 80
+link:
+  change_avatar: "https://gravatar.com/emails"
+pagy:
+  items: 10

@@ -14,7 +14,10 @@ class User < ApplicationRecord
 
   has_secure_password
   validates :password, presence: true,
-                       length: {minimum: Settings.degit.length_password_min}
+                       length: {minimum: Settings.degit.length_password_min},
+                       allow_nil: true
+
+  scope :ordered_by_name, ->{order(name: :asc)}
 
   class << self
     def digest string
