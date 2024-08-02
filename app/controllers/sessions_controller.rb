@@ -18,11 +18,16 @@ class SessionsController < ApplicationController
   private
 
   def handle_success_login user
-    forwarding_url = session[:forwarding_url]
-    reset_session
-    log_in user
-    params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-    redirect_to forwarding_url || user
+    if user.activated
+      forwarding_url = session[:forwarding_url]
+      reset_session
+      log_in user
+      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
+      redirect_to forwarding_url || user
+    else
+      flash[:warning] = t "invalid_activation"
+      redirect_to root_url
+    end
   end
 
   def handle_fail_login
