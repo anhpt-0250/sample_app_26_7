@@ -46,6 +46,7 @@ gem "bootstrap-sass", "3.4.1"
 gem "config"
 gem "faker"
 gem "pagy"
+gem "pry-rails"
 gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
