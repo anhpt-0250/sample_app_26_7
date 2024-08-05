@@ -6,9 +6,17 @@ degit:
   length_password_min: 6
   size_avatar: 50
   size_avatar_default: 80
+  length_content_post: 140
 link:
   change_avatar: "https://gravatar.com/emails"
 pagy:
-  items: 10
+  items: 15
 mail:
   hour_expire: 2
+image: 5
+image_type:
+  - image/jpeg
+  - image/gif
+  - image/png
+image_variant: 500
+image_type_text: "image/jpeg,image/gif,image/png"

@@ -16,8 +16,12 @@ gem "mysql2", "~> 0.5"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+gem "i18n-js"
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
+
+gem "image_processing", "1.12.2"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
@@ -33,6 +37,8 @@ gem "jbuilder"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
+
+gem "active_storage_validations", "0.9.8"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html]
 gem "bcrypt", "~> 3.1.18"
