@@ -5,10 +5,17 @@ class Micropost < ApplicationRecord
   has_one_attached :image do |attachable|
     attachable.variant :display,
                        resize_to_limit: [Settings.image_variant,
+<<<<<<< HEAD
                                          Settings.image_variant]
   end
   delegate :name, to: :user, prefix: true
   scope :newest, ->{order created_at: :desc}
+=======
+Settings.image_variant]
+  end
+  delegate :name, to: :user, prefix: true
+  scope :newest, ->{order(created_at: :desc)}
+>>>>>>> f9c7870 (chapter 3)
 
   validates :content, presence: true,
                       length: {maximum: Settings.degit.length_content_post}

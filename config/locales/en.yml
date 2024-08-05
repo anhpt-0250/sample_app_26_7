@@ -54,7 +54,12 @@ en:
   reset_expired: "Password reset has expired"
   submit: "Submit"
   microposts: "Microposts"
+<<<<<<< HEAD
   posted_ago: "Posted %{time} ago"
+=======
+  posted: "Posted"
+  ago: "ago"
+>>>>>>> f9c7870 (chapter 3)
   micropost_created: "Micropost created"
   view_profile: View profile
   content: "Content"
@@ -68,4 +73,7 @@ en:
   should_less: "should be less than 5MB"
   alerts:
     max_file_size: "Maximum file size is 5MB. Please choose a smaller file."
+<<<<<<< HEAD
   no_post: "No post"
+=======
+>>>>>>> f9c7870 (chapter 3)

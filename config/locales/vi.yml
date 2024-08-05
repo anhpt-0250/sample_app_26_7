@@ -54,7 +54,12 @@ vi:
   reset_expired: "Đổi mật khẩu đã hết hạn"
   submit: "Xác nhận"
   microposts: "Bài đăng"
+<<<<<<< HEAD
   posted_ago: "Đã đăng %{time} trước"
+=======
+  posted: "Đã đăng"
+  ago: "trước"
+>>>>>>> f9c7870 (chapter 3)
   micropost_created: "Đã tạo bài"
   view_profile: "Xem trang cá nhân"
   content: "Nội dung"
@@ -68,4 +73,7 @@ vi:
   should_less: "Nên nhỏ hơn 5 MB"
   alerts:
     max_file_size: "kích cỡ phải nhỏ hơn 5MB."
+<<<<<<< HEAD
   no_post: "Không có bài đăng"
+=======
+>>>>>>> f9c7870 (chapter 3)

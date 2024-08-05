@@ -1,7 +1,11 @@
 <%= form_with model: @micropost, local: true, data: { turbo: false } do |f| %>
   <%= render "shared/error_messages", object: f.object %>
   <div class="field">
+<<<<<<< HEAD
     <%= f.label t "content" %>
+=======
+    <%= f.label t "content"%>
+>>>>>>> f9c7870 (chapter 3)
     <%= f.text_area :content , placeholder: t("placeholder") %>
   </div>
   <span class="image">
