@@ -10,3 +10,5 @@ link:
   change_avatar: "https://gravatar.com/emails"
 pagy:
   items: 10
+mail:
+  hour_expire: 2
