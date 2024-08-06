@@ -7,6 +7,8 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
                    length: {maximum: Settings.degit.length_name_max}
   validates :email, presence: true,
@@ -76,6 +78,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.mail.hour_expire.hours.ago
+  end
+
+  def feed
+    microposts
   end
   private
 
