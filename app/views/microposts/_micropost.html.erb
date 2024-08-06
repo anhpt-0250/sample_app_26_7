@@ -8,11 +8,7 @@
     <%= image_tag micropost.image.variant(resize_to_limit: [Settings.image_variant, Settings.image_variant]) %>
   <% end %>
   <span class="timestamp">
-<<<<<<< HEAD
     <%= t "posted_ago", time: time_ago_in_words(micropost.created_at) %>
-=======
-    <%= t "posted" %> <%= time_ago_in_words(micropost.created_at) %> <%= t "ago" %>.
->>>>>>> f9c7870 (chapter 3)
   </span>
   <% if current_user? micropost.user %>
       <%= link_to t("delete"), micropost, data: { "turbo-method": :delete,
