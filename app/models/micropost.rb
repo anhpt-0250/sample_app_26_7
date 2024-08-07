@@ -9,6 +9,7 @@ class Micropost < ApplicationRecord
   end
   delegate :name, to: :user, prefix: true
   scope :newest, ->{order created_at: :desc}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
 
   validates :content, presence: true,
                       length: {maximum: Settings.degit.length_content_post}

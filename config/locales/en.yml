@@ -69,3 +69,9 @@ en:
   alerts:
     max_file_size: "Maximum file size is 5MB. Please choose a smaller file."
   no_post: "No post"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  not_found: "Not found"
+  relationship_not_found: "Relationship not found"
