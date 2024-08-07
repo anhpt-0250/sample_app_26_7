@@ -7,6 +7,7 @@ degit:
   size_avatar: 50
   size_avatar_default: 80
   length_content_post: 140
+  size_avatar_user: 30
 link:
   change_avatar: "https://gravatar.com/emails"
 pagy:

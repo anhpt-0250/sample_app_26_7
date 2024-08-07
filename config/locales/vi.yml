@@ -69,3 +69,9 @@ vi:
   alerts:
     max_file_size: "kích cỡ phải nhỏ hơn 5MB."
   no_post: "Không có bài đăng"
+  following: "Đang theo dõi"
+  followers: "Người theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
+  not_found: "Không tìm thấy"
+  relationship_not_found: "Không tìm thấy mối quan hệ"
